@@ -17,7 +17,7 @@ document.addEventListener ("DOMContentLoaded",function(){
                btn.classList.add = "remove-btn"
 
                 btn.addEventListener('click', function() {
-            taskList.remove(li);})
+            taskList.removeChild(li);})
 
             li.appendChild(btn);
           taskList.appendChild(li);
@@ -25,7 +25,9 @@ document.addEventListener ("DOMContentLoaded",function(){
 
            taskInput.value = ""; 
             }
-       taskInput.addEventListener('click', function() {})
+       taskInput.addEventListener('click', function(){})
+
+       addButton.addEventListener(addTask, function(){})
 
        taskInput.addEventListener('keypress', function() {
           if (event.key === "Enter") {
